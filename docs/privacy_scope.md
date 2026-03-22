@@ -1,26 +1,26 @@
-# Repository Scope & Privacy Policy
+# Repository Scope & Intelligence Protection Policy
 
-This repository is a **Public Showcase**. Its purpose is to demonstrate the architecture, user interface, and model-context interface of the Open World News MCP.
+This repository is a **Public Showcase** intended to demonstrate the high-level architecture, interface standards, and UI polish of the Open World News MCP.
 
 ## 🔍 What is Publicly Released?
-- **Architecture & Infrastructure Design**: Diagrams and documentation explaining the 4-layer approach.
-- **MCP Tool Interface**: Complete tool definitions, parameter sets, and response schemas.
-- **UI Operator Source**: The complete HTML/JS/CSS source code for the monitoring dashboard.
-- **Client Implementation Stubs**: Examples of how the server entry points and tool handlers are structured.
+- **Intelligence Interface Standards**: Full tool definitions and response schemas for AI integration.
+- **Architectural Reference**: The 4-layer design philosphy for multi-national news analysis.
+- **UI Dashboard Source**: The complete front-end source for the monitoring interface.
+- **Integration Stubs**: Showcase-level code demonstrating how the server communicates.
 
 ## 🔒 What remains Private?
-To maintain our competitive advantage and ensure the security of our ingestion engine, the following components are not included in this public repository:
+To prioritize service quality and protect the project's **Core Intelligence Assets**, the following operational components remain private:
 
-1. **The Ingestion Engine (Core)**: The logic responsible for fetching and normalizing feeds from hundreds of international sources.
-2. **Proprietary Cleansing Rules**: The heuristics used to identify high-signal news vs. noise.
-3. **Internal Orchestration**: The background refresh workers and cache invalidation policies.
-4. **Active Extraction Core**: The underlying parsing engine for "read_article_content" (hosted as a separate microservice).
+1. **The Ingestion & Synthesis Engine**: The complex logic that aggregates and normalizes hundreds of international media sources.
+2. **Proprietary Narrative Heuristics**: The rules used to identify high-signal framing vs. noise.
+3. **Operational Context**: Background refresh policies, source prioritization, and cache invalidation.
+4. **Active Deep-Reading Engine**: The specialized article parser that bypasses clutter to feed AI agents.
 
-## 🤝 Why this hybrid approach?
-We believe in **"Transparency where it counts; Security where it's needed."**
-- We share the **Interface** so developers can integrate and build upon our work.
-- We share the **UI** to showcase the project's polish and operational readiness.
-- We keep the **Engine** private to ensure we can continue providing a reliable, stable service without exposing the service to destructive scraping or direct clone-copying.
+## 🤝 The "Transparency vs. Security" Balance
+This project follows a **"Private Engine, Public Interface"** strategy:
+- We provide the **Interface** so the developer community can understand and build with our intelligence layer.
+- We show the **UI** to demonstrate readiness for production-level monitoring.
+- We secure the **Engine** to prevent unauthorized cloning of our primary value—the ability to provide a clean, reliable, and high-quality multi-national narrative sensor.
 
 ---
-*Thank you for exploring our project. For commercial inquiries regarding the core engine, please contact the project maintainers.*
+*Thank you for exploring our vision. For commercial licensing of the full engine, please contact the maintainers.*

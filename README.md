@@ -4,65 +4,57 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **One event, different national narratives.**  
-> A country-aware global news layer for AI Agents via Model Context Protocol (MCP).
+> A country-aware global news layer for AI and operators to track local framing of war, diplomacy, and global crises.
 
 ---
 
-## 🌍 Overview
-**Open World News MCP** is a specialized news delivery layer designed for AI agents that need to compare news framing across different countries. It goes beyond simple "top headlines" by providing a structured, multi-national perspective on global events.
+## 🌎 Overview
+**Open World News MCP** is not just a news aggregator; it is an **Intelligence Interface** designed for AI agents that must understand the complex differences in national framing. 
 
-This repository serves as a **Public Showcase** of the project's architecture, tool interfaces, and UI dashboard. 
+In a world of global conflicts and economic shifts, the "facts" are only half the story. The real intelligence lies in the **narratives**—how the same event is told by local media across the US, UK, Middle East, and Asia. This project provides the standardized layer to bridge those perspectives via Model Context Protocol (MCP).
 
-> [!IMPORTANT]
-> To protect proprietary operational logic and ensure service stability, the **core processing engine** is not included in this public repository. However, a **Live Demo Server** is available for direct testing.
-
-## ✨ Key Features
-- **Country-Specific Framing**: Compare how the same topic is covered by major publishers in the US, UK, South Korea, etc.
-- **AI-Optimized Content**: Clean, structured data (JSON) designed specifically for LLM consumption.
-- **Active Article Extraction**: Bypasses clutter to read the full text of linked articles on-demand.
-- **SSE Transport Support**: Native HTTP streaming for robust remote connections.
+## ✨ Why This Matters
+- **National Narrative Tracking**: Track how local media describes international crises, energy security, and regional diplomacy.
+- **AI-Readable Intelligence Layer**: High-signal, structured news data optimized for LLM comparison and analysis.
+- **Active Framing Analysis**: Deep-read article text to detect sentiment and narrative patterns, instead of just reading headlines.
 
 ## 🚀 Live Demo
-You can connect your MCP client (like Claude Desktop or ASDK Studio) directly to our demo server:
+Experience the difference in global perspective directly:
 
 **SSE Endpoint:** `http://35.202.58.51:8766/sse`
 
 ---
 
-## 🛠️ Tool Inventory
-| Tool Name | Purpose |
+## 🛠️ Tool Inventory (Intelligence Sensors)
+| Tool Name | Value Proposition |
 | :--- | :--- |
-| `list_countries` | Enumerate supported regions and topic availability. |
-| `get_country_headlines` | Retrieve high-impact news stories for a specific nation. |
-| `read_article_content` | Deep-read an article's full text for summarization. |
-| `get_special_headlines` | Access curated themes like 'Economy' or 'Stocks'. |
-| `search_google_news` | Real-time fallback for specific publisher queries. |
+| `list_countries` | Enumerate regional information sensors. |
+| `get_country_headlines` | Capture national framing on global events. |
+| `read_article_content` | Active deep-reading to counteract hallucination. |
+| `get_special_headlines` | Thematic intelligence: Economy, Stocks, Security. |
+| `search_google_news` | Supplementary real-time fallback for publisher-specific deep dives. |
 
-*For full details, see [Tools Documentation](docs/tools.md).*
+*For technical specifications, see [Tools Documentation](docs/tools.md).*
 
 ## 🏗️ Architecture
-The system follows a 4-layer architecture designed for cloud scalability:
-1. **Feed Engine**: Managed ingestion and normalization (Private).
-2. **Buffer/Snapshot Layer**: In-memory catalog for near-zero latency.
-3. **MCP Interface**: Unified tool set for AI interaction.
-4. **UI Operator**: Real-time monitoring and oversight dashboard.
+Designed for low-latency intelligence delivery:
+1. **Intelligent Ingestion**: Proprietary cleaning and framing normalization (Private).
+2. **Snapshot Buffer**: Zero-latency in-memory state of the world's narratives.
+3. **MCP Interface**: Standardized protocol for AI integration.
+4. **UI Operator**: Real-time dashboard for overseeing global news health.
 
 *See the [Architecture Deep Dive](docs/architecture.md) for more.*
 
 ---
 
-## 📁 Repository Scope
-| Component | Public | Private |
-| :--- | :--- | :--- |
-| UI Dashboard (Tailwind/JS) | ✅ Full | - |
-| MCP Tool Interface (Stubs) | ✅ Specs | - |
-| Documentation & Examples | ✅ Full | - |
-| **Core Feed Engine** | - | 🔒 Private |
-| **Article Extraction Logic** | - | 🔒 Private |
-| **Operational Secrets** | - | 🔒 Private |
+## 📁 Repository Scope (Public Showcase)
+This repository contains the architecture, UI source, and tool stubs to demonstrate the project's **Structural Value**.
+
+> [!NOTE]
+> To protect the proprietary heuristics of the **Narrative Classification Engine** and ensure service stability, the core ingestion and operational logic remain private. This ensures we can provide a high-quality, stable intelligence layer without unauthorized replication of the underlying infrastructure.
 
 ## 📝 License
-This showcase repository is licensed under the MIT License.
+MIT License (Public Showcase Files).
 
 ---
-© 2026 Open World News MCP. Developed for the next generation of Global AI Agents.
+© 2026 Open World News MCP. Tracking the global narrative shift. 66
