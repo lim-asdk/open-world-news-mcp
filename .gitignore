@@ -1,0 +1,13 @@
+# Logs, caches, and build folders
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Platform specifics
+.DS_Store
+Thumbs.db
+
+# Internal Internal Docs (Do NOT push)
+docs/배포_배경_및_목적.md
+docs/internal/
