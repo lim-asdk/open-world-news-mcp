@@ -1,0 +1,21 @@
+{
+  "country": "USA",
+  "headlines": [
+    {
+      "title": "[Demo] Market Response to Inflation Data",
+      "source": "Global Finance Watch",
+      "link": "http://example.com/article/101",
+      "published_at": "2026-03-23T08:00:00Z",
+      "summary": "Analysts observe steady recovery as consumer price index stabilizes in the first quarter..."
+    },
+    {
+      "title": "[Demo] AI Governance Framework Proposed",
+      "source": "Tech Standard",
+      "link": "http://example.com/article/102",
+      "published_at": "2026-03-23T09:30:00Z",
+      "summary": "New federal guidelines aim to balance innovation with safety across emerging LLM categories."
+    }
+  ],
+  "engine_status": "Healthy (Buffered)",
+  "last_refresh": "2026-03-23T07:15:00Z"
+}

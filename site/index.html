@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open World News MCP v2 Operator UI</title>
+    <link rel="stylesheet" href="styles.css?v=2.0.1" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Operator Surface</p>
+        <h1>Open World News MCP v2</h1>
+        <p class="lede">
+          A lightweight console for inspecting public news coverage, tool structure,
+          and catalog health. Function first, styling second.
+        </p>
+      </section>
+
+      <section class="panel panel-controls">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Controls</p>
+            <h2>Snapshot filter, sort and refresh</h2>
+          </div>
+          <p class="section-copy">
+            The UI reads the created JSON directly. Filtering and sorting happen
+            locally so the source snapshots stay untouched.
+          </p>
+        </div>
+        <div class="control-grid">
+          <label class="control-field">
+            <span>Country</span>
+            <select id="country-filter"></select>
+          </label>
+          <label class="control-field">
+            <span>Topic</span>
+            <select id="topic-filter"></select>
+          </label>
+          <label class="control-field control-span">
+            <span>Sort by</span>
+            <select id="sort-mode">
+              <option value="state">state</option>
+              <option value="country">country</option>
+              <option value="topic">topic</option>
+              <option value="source">source</option>
+              <option value="latest">latest update</option>
+            </select>
+          </label>
+          <div class="control-actions">
+            <button id="refresh-button" type="button">Refresh view</button>
+            <button id="status-button" type="button" class="secondary">Reload snapshots</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-live">
+        <article class="panel panel-live">
+          <h2>Feed Health</h2>
+          <div class="stat-row">
+            <div>
+              <span class="label">Ready</span>
+              <strong id="feed-ready-count">-</strong>
+            </div>
+            <div>
+              <span class="label">Degraded</span>
+              <strong id="feed-degraded-count">-</strong>
+            </div>
+            <div>
+              <span class="label">Unknown</span>
+              <strong id="feed-unknown-count">-</strong>
+            </div>
+          </div>
+          <div id="feed-status-meta" class="meta-strip"></div>
+        </article>
+
+        <article class="panel panel-live">
+          <h2>Latest Headlines Snapshot</h2>
+          <div id="headline-status-meta" class="meta-strip"></div>
+          <div id="headline-preview" class="stack"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Operator Detail</p>
+            <h2>Feed Health Detail</h2>
+          </div>
+          <p class="section-copy">
+            Each upstream feed keeps its own state so failed sources do not block the
+            rest of the catalog.
+          </p>
+        </div>
+        <div id="feed-detail" class="feed-detail"></div>
+      </section>
+
+      <section class="grid">
+        <article class="panel panel-compact">
+          <h2>Coverage</h2>
+          <div class="stat-row">
+            <div>
+              <span class="label">Countries</span>
+              <strong id="country-count">-</strong>
+            </div>
+            <div>
+              <span class="label">Topics</span>
+              <strong id="topic-count">-</strong>
+            </div>
+            <div>
+              <span class="label">Tools</span>
+              <strong id="tool-count">-</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel panel-compact">
+          <h2>Runtime Profile</h2>
+          <div id="runtime-profile" class="stack"></div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel panel-compact">
+          <h2>Countries</h2>
+          <div id="countries" class="chip-list"></div>
+        </article>
+
+        <article class="panel panel-compact">
+          <h2>Topics</h2>
+          <div id="topics" class="chip-list"></div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel panel-compact">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Pack Overview</p>
+              <h2>Runtime Pack</h2>
+            </div>
+          </div>
+          <div id="pack-summary" class="stack"></div>
+        </article>
+
+        <article class="panel panel-compact">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Tool Catalog</p>
+              <h2>Operator Inventory</h2>
+            </div>
+            <p class="section-copy">
+              The first public UI focuses on structure, not editing. Operators can see
+              what exists before runtime wiring is added.
+            </p>
+          </div>
+          <div id="tool-cards" class="card-grid"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Runtime Note</p>
+            <h2>Public-safe baseline</h2>
+          </div>
+        </div>
+        <ul class="plain-list">
+          <li>Direct RSS/public HTTP sources only</li>
+          <li>No private keys in the public baseline</li>
+          <li>Snapshot-first UI with sort-only controls</li>
+          <li>Operator UI is inspection-first and safe to publish</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

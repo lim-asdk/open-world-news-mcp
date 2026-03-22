@@ -1,0 +1,11 @@
+{
+  "category": "Economy",
+  "headlines": [
+    {
+      "title": "[Demo Special] Global Interest Rate Trends",
+      "source": "Economy Hub",
+      "link": "http://example.com/economy/201",
+      "published_at": "2026-03-23T10:00:00Z"
+    }
+  ]
+}
