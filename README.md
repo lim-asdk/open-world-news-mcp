@@ -1,60 +1,60 @@
-# Open World News MCP
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](http://35.202.58.51:8766/sse)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Open World News MCP: Global Intelligence Interface
 
 > **One event, different national narratives.**  
-> A country-aware global news layer for AI and operators to track local framing of war, diplomacy, and global crises.
+> Decode how the world's media frames global crises, energy, and diplomacy.
+
+| [🚀 Live Demo](http://35.202.58.51:8766/sse) | [🏗️ Architecture](docs/architecture.md) | [🛠️ Tools](docs/tools.md) | [🔍 Privacy Scope](docs/privacy_scope.md) |
+| :--- | :--- | :--- | :--- |
 
 ---
 
-## 🌎 Overview
-**Open World News MCP** is not just a news aggregator; it is an **Intelligence Interface** designed for AI agents that must understand the complex differences in national framing. 
+## 🌎 What is Open World News MCP?
+It is a **Country-Aware Intelligence Layer** for AI agents. In a world of geopolitical shifts, the "facts" are only the surface. The real intelligence lies in the **narratives**—how the same event is told by local media across the US, UK, Middle East, and Asia.
 
-In a world of global conflicts and economic shifts, the "facts" are only half the story. The real intelligence lies in the **narratives**—how the same event is told by local media across the US, UK, Middle East, and Asia. This project provides the standardized layer to bridge those perspectives via Model Context Protocol (MCP).
+## 🔥 Why This is Necessary
+During global conflicts or diplomatic crises, information is weaponized through **framing**. 
+- **USA** media might focus on security alliances.
+- **Saudi Arabia** media might focus on energy stability.
+- **UK** media might focus on international law.
 
-## ✨ Why This Matters
-- **National Narrative Tracking**: Track how local media describes international crises, energy security, and regional diplomacy.
-- **AI-Readable Intelligence Layer**: High-signal, structured news data optimized for LLM comparison and analysis.
-- **Active Framing Analysis**: Deep-read article text to detect sentiment and narrative patterns, instead of just reading headlines.
+This MCP allows AI models to **compare these tones side-by-side** to provide a truly global perspective, not just a Western-centric one.
 
-## 🚀 Live Demo
-Experience the difference in global perspective directly:
+## 📊 Compare National Narratives (Example)
+*How the same crisis is framed across regions:*
+
+| Region | Primary Narrative Framing | Sample Output |
+| :--- | :--- | :--- |
+| **USA** | Strategic Alliances & Deterrence | [USA Sample](docs/examples/usa_headlines_sample.json) |
+| **UK** | Humanitarian Impact & Legal Frameworks | [UK Sample](docs/examples/uk_headlines_sample.json) |
+| **Saudi Arabia** | Regional Stability & Energy Leadership | [Saudi Sample](docs/examples/saudi_headlines_sample.json) |
+
+---
+
+## 📸 Dashboard Preview
+![Operator Dashboard](screenshots/ui_dashboard.png)
+
+---
+
+## 🚀 Live Demo Connection
+Connect your MCP client (Claude Desktop, ASDK Studio) directly to our GCP production instance:
 
 **SSE Endpoint:** `http://35.202.58.51:8766/sse`
 
 ---
 
-## 🛠️ Tool Inventory (Intelligence Sensors)
-| Tool Name | Value Proposition |
-| :--- | :--- |
-| `list_countries` | Enumerate regional information sensors. |
-| `get_country_headlines` | Capture national framing on global events. |
-| `read_article_content` | Active deep-reading to counteract hallucination. |
-| `get_special_headlines` | Thematic intelligence: Economy, Stocks, Security. |
-| `search_google_news` | Supplementary real-time fallback for publisher-specific deep dives. |
+## ✨ Features
+- **Perspective Detection**: Not just *what* happened, but *how* it's reported.
+- **Deep-Reading Engine**: Active article extraction to bypass paywalls and ads for AI summarization.
+- **Zero-Latency In-Memory Catalog**: Immediate access to the latest global narrative snapshots.
 
-*For technical specifications, see [Tools Documentation](docs/tools.md).*
+## 📁 Repository Showcase Scope
+This repository demonstrates the **Project Architecture, Model-Context Interface, and UI Dashboard**. 
 
-## 🏗️ Architecture
-Designed for low-latency intelligence delivery:
-1. **Intelligent Ingestion**: Proprietary cleaning and framing normalization (Private).
-2. **Snapshot Buffer**: Zero-latency in-memory state of the world's narratives.
-3. **MCP Interface**: Standardized protocol for AI integration.
-4. **UI Operator**: Real-time dashboard for overseeing global news health.
-
-*See the [Architecture Deep Dive](docs/architecture.md) for more.*
-
----
-
-## 📁 Repository Scope (Public Showcase)
-This repository contains the architecture, UI source, and tool stubs to demonstrate the project's **Structural Value**.
-
-> [!NOTE]
-> To protect the proprietary heuristics of the **Narrative Classification Engine** and ensure service stability, the core ingestion and operational logic remain private. This ensures we can provide a high-quality, stable intelligence layer without unauthorized replication of the underlying infrastructure.
+> [!IMPORTANT]
+> To protect proprietary operational logic (ingestion engine, fallback heuristics), the core background processing logic is private. This repository provides **Tool Stubs** to illustrate the interface while the **Live Demo** provides the actual performance.
 
 ## 📝 License
-MIT License (Public Showcase Files).
+Showcase assets are licensed under the MIT License.
 
 ---
-© 2026 Open World News MCP. Tracking the global narrative shift. 66
+© 2026 Open World News MCP. Tracking the world's shifting narratives. 66

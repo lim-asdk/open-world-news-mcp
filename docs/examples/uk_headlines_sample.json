@@ -1,0 +1,12 @@
+{
+  "country": "UK",
+  "headlines": [
+    {
+      "title": "[Demo] London Diplomatic Response to Global Conflict",
+      "source": "The Guardian-style Example",
+      "link": "http://example.com/uk/401",
+      "published_at": "2026-03-23T13:00:00Z",
+      "framing": "Emphasizes international law and humanitarian concerns."
+    }
+  ]
+}

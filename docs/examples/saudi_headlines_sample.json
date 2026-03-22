@@ -1,0 +1,18 @@
+{
+  "country": "Saudi Arabia",
+  "headlines": [
+    {
+      "title": "[Demo] Strategic Energy Alignment Discussed at Riyadh Summit",
+      "source": "Al-Arabiya News",
+      "link": "http://example.com/saudi/301",
+      "published_at": "2026-03-23T11:00:00Z",
+      "framing": "Focuses on regional stability and energy leadership goals."
+    },
+    {
+      "title": "[Demo] Vision 2030: Tech Sector Growth Accelerates",
+      "source": "Saudi Gazette",
+      "link": "http://example.com/saudi/302",
+      "published_at": "2026-03-23T12:30:00Z"
+    }
+  ]
+}
