@@ -11,52 +11,49 @@
 ## 🌎 What is Open World News MCP?
 It is a **Country-Aware Intelligence Layer** for AI agents. In a world of geopolitical shifts, the "facts" are only the surface. The real intelligence lies in the **narratives**—how the same event is told by local media across the US, UK, Middle East, and Asia.
 
-## 🔥 Why This is Necessary
-During global conflicts or diplomatic crises, information is weaponized through **framing**. 
-- **USA** media might focus on security alliances.
-- **Saudi Arabia** media might focus on energy stability.
-- **UK** media might focus on international law.
+## 🛠️ How to Try (Quick Setup)
+1. **Open your MCP client** (e.g., Claude Desktop, ASDK Studio).
+2. **Add the SSE Endpoint**: `http://35.202.58.51:8766/sse`
+3. **Run a prompt**: *"What are the local headlines in Saudi Arabia regarding energy security?"*
 
-This MCP allows AI models to **compare these tones side-by-side** to provide a truly global perspective, not just a Western-centric one.
+---
 
-## 📊 Compare National Narratives (Example)
-*How the same crisis is framed across regions:*
+## 🔥 Why Narrative Comparison Matters
+During global conflicts, information is prioritized differently across regions. This tool reveals those framing shifts side-by-side.
 
-| Region | Primary Narrative Framing | Sample Output |
-| :--- | :--- | :--- |
-| **USA** | Strategic Alliances & Deterrence | [USA Sample](docs/examples/usa_headlines_sample.json) |
-| **UK** | Humanitarian Impact & Legal Frameworks | [UK Sample](docs/examples/uk_headlines_sample.json) |
-| **Saudi Arabia** | Regional Stability & Energy Leadership | [Saudi Sample](docs/examples/saudi_headlines_sample.json) |
+### 🇺🇸 USA: Strategic Deterrence
+Focuses on security alliances, military deterrence, and global economic pressure.  
+[USA Example Data](docs/examples/usa_headlines_sample.json)
+
+### 🇬🇧 UNITED KINGDOM: Legal & Humanitarian
+Emphasizes international law, humanitarian assessmemts, and domestic energy impact.  
+[UK Example Data](docs/examples/uk_headlines_sample.json)
+
+### 🇸🇦 SAUDI ARABIA: Regional Stability
+Prioritizes regional readiness, energy leadership, and de-escalation posture.  
+[Saudi Example Data](docs/examples/saudi_headlines_sample.json)
 
 ---
 
 ## 📸 Dashboard Preview
 ![Operator Dashboard](screenshots/ui_dashboard.png)
+> *Technical Preview: The Operator Interface monitors feed health and tool parity.*
 
 ---
 
-## 🚀 Live Demo Connection
-Connect your MCP client (Claude Desktop, ASDK Studio) directly to our GCP production instance:
-
-**SSE Endpoint:** `http://35.202.58.51:8766/sse`
-
----
-
-## ✨ Features
+## ✨ Key Features
 - **Perspective Detection**: Not just *what* happened, but *how* it's reported.
-- **Deep-Reading Engine**: Active article extraction to bypass paywalls and ads for AI summarization.
-- **Zero-Latency In-Memory Catalog**: Immediate access to the latest global narrative snapshots.
+- **Deep-Reading Engine**: Extracts the main article body for cleaner AI summarization and analysis.
+- **Fast snapshots**: Immediate access to the latest global narrative snapshots.
 
 ## 📁 Repository Showcase Scope
 This repository demonstrates the **Project Architecture, Model-Context Interface, and UI Dashboard**. 
 
 > [!IMPORTANT]
-> To protect proprietary operational logic (ingestion engine, fallback heuristics), the core background processing logic is private. This repository provides **Tool Stubs** to illustrate the interface while the **Live Demo** provides the actual performance.
+> To protect proprietary operational logic (ingestion engine, fallback heuristics), the core background processing logic is private. The Live Demo provides the actual intelligence stream.
 
 ## 📝 License
-This showcase repository is licensed under the **General & Non-Commercial Use License**. 
-- Personal and educational use is encouraged.
-- Commercial use is strictly prohibited without prior authorization.
+Licensed under the **General & Non-Commercial Use License**. Commercial use requires prior authorization.
 
 ---
 © 2026 Open World News MCP. Tracking the world's shifting narratives. 66
