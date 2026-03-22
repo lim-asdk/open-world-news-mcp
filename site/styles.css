@@ -94,9 +94,11 @@ h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.1; margin: 0; font-weight
 .compare-card { padding: 40px; border-radius: 28px; border: 1px solid var(--line); background: var(--panel); position: relative; overflow: hidden; }
 .compare-card::after { content: ''; position: absolute; top:0; left:0; right:0; height:4px; background: var(--line); }
 .compare-card.highlight::after { background: var(--accent); }
-.card-tag { display: inline-block; padding: 6px 14px; border-radius: 10px; background: var(--line); font-size: 12px; font-weight: 800; margin-bottom: 12px; letter-spacing: 0.1em; color: #fff; }
-.focus-title { color: var(--accent); font-size: 13px; font-weight: 800; text-transform: uppercase; margin-bottom: 16px; letter-spacing: 0.05em; }
-.compare-card h4 { font-size: 20px; color: #fff; margin-bottom: 24px; font-weight: 600; font-style: italic; line-height: 1.4; }
+.card-tag { display: inline-block; padding: 6px 14px; border-radius: 10px; background: var(--line); font-size: 12px; font-weight: 800; margin-bottom: 24px; letter-spacing: 0.1em; color: #fff; }
+.focus-title { color: var(--accent); font-size: 15px; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.1em; }
+.compare-card .quote { font-size: 20px; color: #fff; margin-bottom: 24px; font-weight: 600; font-style: italic; line-height: 1.4; border-left: 3px solid var(--line); padding-left: 20px; }
+.compare-card.highlight .quote { border-left-color: var(--accent); }
+.context-note { font-size: 15px; color: var(--accent); margin-top: 10px; font-style: italic; }
 .keywords { display: flex; gap: 8px; flex-wrap: wrap; }
 .keywords span { padding: 5px 12px; border-radius: 6px; background: rgba(255,255,255,0.05); font-size: 13px; color: var(--muted); }
 

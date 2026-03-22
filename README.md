@@ -56,4 +56,4 @@ This repository demonstrates the **Project Architecture, Model-Context Interface
 Licensed under the **General & Non-Commercial Use License**. Commercial use requires prior authorization.
 
 ---
-© 2026 Open World News MCP. Tracking the world's shifting narratives. 66
+© 2026 Open World News MCP. Tracking the world's shifting narratives.
