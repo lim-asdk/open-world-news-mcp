@@ -3,176 +3,217 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Open World News MCP: Global Intelligence Interface</title>
-    <link rel="stylesheet" href="styles.css?v=2.0.1" />
+    <title>Open World News MCP | Global Intelligence Interface</title>
+    <link rel="stylesheet" href="styles.css?v=2.2.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main class="shell">
-      <section class="hero">
-        <p class="eyebrow">Intelligence Surface</p>
-        <h1>One Event, Different Narratives.</h1>
-        <p class="lede">
-          A country-aware global news intelligence layer. Track how local media across 
-          countries describe war, diplomacy, markets, and breaking global events.
+    <!-- Landing Page: Hero Section -->
+    <header class="hero-landing">
+      <div class="container">
+        <p class="eyebrow highlight">Global Intelligence Interface</p>
+        <h1 class="gradient-text">One Event,<br>Different National Narratives.</h1>
+        <p class="lede-marketing">
+          Compare how local media across countries frame the same global event across 
+          war, diplomacy, energy, markets, and geopolitical crises.
         </p>
-      </section>
-
-      <section class="panel panel-controls">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Controls</p>
-            <h2>Snapshot filter, sort and refresh</h2>
-          </div>
-          <p class="section-copy">
-            The UI reads the created JSON directly. Filtering and sorting happen
-            locally so the source snapshots stay untouched.
-          </p>
+        <div class="cta-group">
+          <a href="#demo" class="btn btn-primary">Try Live Demo</a>
+          <a href="https://github.com/lim-asdk/open-world-news-mcp" target="_blank" class="btn btn-secondary">View on GitHub</a>
         </div>
-        <div class="control-grid">
-          <label class="control-field">
-            <span>Country</span>
-            <select id="country-filter"></select>
-          </label>
-          <label class="control-field">
-            <span>Topic</span>
-            <select id="topic-filter"></select>
-          </label>
-          <label class="control-field control-span">
-            <span>Sort by</span>
-            <select id="sort-mode">
-              <option value="state">state</option>
-              <option value="country">country</option>
-              <option value="topic">topic</option>
-              <option value="source">source</option>
-              <option value="latest">latest update</option>
-            </select>
-          </label>
-          <div class="control-actions">
-            <button id="refresh-button" type="button">Refresh view</button>
-            <button id="status-button" type="button" class="secondary">Reload snapshots</button>
-          </div>
+      </div>
+    </header>
+
+    <!-- Value Proposition -->
+    <section class="section section-why">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Why Narrative Differences Matter</h2>
+          <p>Global events do not travel as neutral information. Framing is the intelligence itself.</p>
         </div>
-      </section>
-
-      <section class="grid grid-live">
-        <article class="panel panel-live">
-          <h2>Feed Health</h2>
-          <div class="stat-row">
-            <div>
-              <span class="label">Ready</span>
-              <strong id="feed-ready-count">-</strong>
-            </div>
-            <div>
-              <span class="label">Degraded</span>
-              <strong id="feed-degraded-count">-</strong>
-            </div>
-            <div>
-              <span class="label">Unknown</span>
-              <strong id="feed-unknown-count">-</strong>
-            </div>
-          </div>
-          <div id="feed-status-meta" class="meta-strip"></div>
-        </article>
-
-        <article class="panel panel-live">
-          <h2>Latest Headlines Snapshot</h2>
-          <div id="headline-status-meta" class="meta-strip"></div>
-          <div id="headline-preview" class="stack"></div>
-        </article>
-      </section>
-
-      <section class="panel">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Operator Detail</p>
-            <h2>Feed Health Detail</h2>
-          </div>
-          <p class="section-copy">
-            Each upstream feed keeps its own state so failed sources do not block the
-            rest of the catalog.
-          </p>
+        <div class="card-grid-marketing">
+          <article class="feature-card">
+            <div class="icon">🌍</div>
+            <h3>Local Framing</h3>
+            <p>Compare how the US, UK, Gulf, and Asian media describe the same event differently based on regional interests.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">⚔️</div>
+            <h3>Conflict Intelligence</h3>
+            <p>Track narrative shifts during war, military escalation, diplomacy, and international sanctions in real-time.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🤖</div>
+            <h3>AI-Readable Layer</h3>
+            <p>Give structured, country-aware context to AI agents and human operators via a standardized MCP interface.</p>
+          </article>
         </div>
-        <div id="feed-detail" class="feed-detail"></div>
-      </section>
+      </div>
+    </section>
 
-      <section class="grid">
-        <article class="panel panel-compact">
-          <h2>Coverage</h2>
-          <div class="stat-row">
-            <div>
-              <span class="label">Countries</span>
-              <strong id="country-count">-</strong>
-            </div>
-            <div>
-              <span class="label">Topics</span>
-              <strong id="topic-count">-</strong>
-            </div>
-            <div>
-              <span class="label">Tools</span>
-              <strong id="tool-count">-</strong>
-            </div>
+    <!-- Comparison Example -->
+    <section class="section section-compare bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <h2>See the same crisis through different national lenses</h2>
+          <p>The same event, three completely different editorial priorities.</p>
+        </div>
+        <div class="comparison-grid">
+          <div class="compare-card">
+            <div class="card-tag">USA</div>
+            <h4>"Strategic deterrence and coalition response."</h4>
+            <p class="card-footer">Focus: Security alliances & Pressure</p>
           </div>
-        </article>
-
-        <article class="panel panel-compact">
-          <h2>Runtime Profile</h2>
-          <div id="runtime-profile" class="stack"></div>
-        </article>
-      </section>
-
-      <section class="grid">
-        <article class="panel panel-compact">
-          <h2>Countries</h2>
-          <div id="countries" class="chip-list"></div>
-        </article>
-
-        <article class="panel panel-compact">
-          <h2>Topics</h2>
-          <div id="topics" class="chip-list"></div>
-        </article>
-      </section>
-
-      <section class="grid">
-        <article class="panel panel-compact">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Pack Overview</p>
-              <h2>Runtime Pack</h2>
-            </div>
+          <div class="compare-card highlight">
+            <div class="card-tag">UK</div>
+            <h4>"International law and humanitarian urgency."</h4>
+            <p class="card-footer">Focus: Assessment & Energy costs</p>
           </div>
-          <div id="pack-summary" class="stack"></div>
-        </article>
-
-        <article class="panel panel-compact">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Tool Catalog</p>
-              <h2>Operator Inventory</h2>
-            </div>
-            <p class="section-copy">
-              The first public UI focuses on structure, not editing. Operators can see
-              what exists before runtime wiring is added.
-            </p>
-          </div>
-          <div id="tool-cards" class="card-grid"></div>
-        </article>
-      </section>
-
-      <section class="panel">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Runtime Note</p>
-            <h2>Public-safe baseline</h2>
+          <div class="compare-card">
+            <div class="card-tag">GULF</div>
+            <h4>"Regional stability and military readiness."</h4>
+            <p class="card-footer">Focus: Direct exposure & De-escalation</p>
           </div>
         </div>
-        <ul class="plain-list">
-          <li>Direct RSS/public HTTP sources only</li>
-          <li>No private keys in the public baseline</li>
-          <li>Snapshot-first UI with sort-only controls</li>
-          <li>Operator UI is inspection-first and safe to publish</li>
-        </ul>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- Live Demo -->
+    <section id="demo" class="section section-demo">
+      <div class="container">
+        <div class="demo-box glass">
+          <div class="demo-info">
+            <h2>Try the Live MCP Demo</h2>
+            <p>Connect your MCP client directly to our GCP production instance. The live engine runs separately to protect private ingestion logic while providing real performance.</p>
+          </div>
+          <div class="demo-endpoint">
+            <label>SSE Endpoint</label>
+            <div class="url-bar">
+              <code id="endpoint-url">http://35.202.58.51:8766/sse</code>
+              <button onclick="navigator.clipboard.writeText('http://35.202.58.51:8766/sse')" class="btn-copy">Copy</button>
+            </div>
+            <p class="hint">Use with Claude Desktop, ASDK Studio, or any MCP-compatible agent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="section section-arch">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Architecture at a Glance</h2>
+          <p>A 4-layer intelligence delivery system designed for scalability.</p>
+        </div>
+        <div class="arch-visual">
+          <div class="arch-step">
+            <div class="step-icon">🔒</div>
+            <div class="step-label">Intelligent Ingestion (Private)</div>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-step">
+            <div class="step-icon">⚡</div>
+            <div class="step-label">Snapshot Buffer</div>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-step">
+            <div class="step-icon">🔌</div>
+            <div class="step-label">MCP Interface</div>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-step highlight">
+            <div class="step-icon">👁️</div>
+            <div class="step-label">Operator Surface</div>
+          </div>
+        </div>
+        <p class="arch-note center">Private ingestion and operational logic remain separate for service stability and quality control.</p>
+      </div>
+    </section>
+
+    <!-- Technical Preview (Old Dashboard) -->
+    <section class="section section-preview bg-black">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Technical Insight</p>
+          <h2>Operator Preview</h2>
+          <p>Monitor feed readiness, coverage scope, and tool availability through the operator-facing UI dashboard.</p>
+        </div>
+        
+        <!-- Original Dashboard Content: nested -->
+        <main class="shell operator-ui">
+          <section class="panel panel-controls">
+            <div class="section-head">
+              <div>
+                <h2>Controls</h2>
+              </div>
+            </div>
+            <div class="control-grid">
+              <label class="control-field">
+                <span>Country</span>
+                <select id="country-filter"></select>
+              </label>
+              <label class="control-field">
+                <span>Topic</span>
+                <select id="topic-filter"></select>
+              </label>
+              <label class="control-field control-span">
+                <span>Sort by</span>
+                <select id="sort-mode">
+                  <option value="state">state</option>
+                  <option value="country">country</option>
+                  <option value="topic">topic</option>
+                  <option value="source">source</option>
+                  <option value="latest">latest update</option>
+                </select>
+              </label>
+              <div class="control-actions">
+                <button id="refresh-button" type="button">Refresh</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid grid-live">
+            <article class="panel panel-live">
+              <h3>Feed Health</h3>
+              <div class="stat-row-compact">
+                <div><span class="label">Ready</span> <strong id="feed-ready-count">-</strong></div>
+                <div><span class="label">Degraded</span> <strong id="feed-degraded-count">-</strong></div>
+              </div>
+              <div id="feed-status-meta" class="meta-strip"></div>
+            </article>
+
+            <article class="panel panel-live">
+              <h3>Latest Headlines</h3>
+              <div id="headline-preview" class="stack"></div>
+            </article>
+          </section>
+
+          <article class="panel panel-compact mt-20">
+            <h3>Tool Catalog</h3>
+            <div id="tool-cards" class="card-grid"></div>
+          </article>
+        </main>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Open World News MCP</h3>
+            <p>Intelligence interface for national narrative comparison.</p>
+          </div>
+          <div class="footer-quote">
+            <p>"Tracking the global narrative shift."</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Open World News MCP Showcase. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>
