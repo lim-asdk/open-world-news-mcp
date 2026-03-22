@@ -54,7 +54,9 @@ This repository demonstrates the **Project Architecture, Model-Context Interface
 > To protect proprietary operational logic (ingestion engine, fallback heuristics), the core background processing logic is private. This repository provides **Tool Stubs** to illustrate the interface while the **Live Demo** provides the actual performance.
 
 ## 📝 License
-Showcase assets are licensed under the MIT License.
+This showcase repository is licensed under the **General & Non-Commercial Use License**. 
+- Personal and educational use is encouraged.
+- Commercial use is strictly prohibited without prior authorization.
 
 ---
 © 2026 Open World News MCP. Tracking the world's shifting narratives. 66
