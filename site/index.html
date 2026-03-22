@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Open World News MCP | Global Intelligence Interface</title>
-    <link rel="stylesheet" href="styles.css?v=2.2.0" />
+    <!-- Use the CSS from the same directory -->
+    <link rel="stylesheet" href="styles.css?v=2.3.5" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Landing Page: Hero Section -->
+    <!-- [A] Hero Section -->
     <header class="hero-landing">
       <div class="container">
         <p class="eyebrow highlight">Global Intelligence Interface</p>
@@ -19,6 +20,7 @@
           Compare how local media across countries frame the same global event across 
           war, diplomacy, energy, markets, and geopolitical crises.
         </p>
+        <p class="sub-lede">A country-aware global news intelligence MCP built for AI agents and operators.</p>
         <div class="cta-group">
           <a href="#demo" class="btn btn-primary">Try Live Demo</a>
           <a href="https://github.com/lim-asdk/open-world-news-mcp" target="_blank" class="btn btn-secondary">View on GitHub</a>
@@ -26,12 +28,12 @@
       </div>
     </header>
 
-    <!-- Value Proposition -->
+    <!-- [B] Why This Matters -->
     <section class="section section-why">
       <div class="container">
         <div class="section-header center">
           <h2>Why Narrative Differences Matter</h2>
-          <p>Global events do not travel as neutral information. Framing is the intelligence itself.</p>
+          <p>Global events do not travel as neutral information. The same event is reframed by each country’s local media, political context, regional interests, and editorial tone. In conflict and crisis, those differences become part of the intelligence itself.</p>
         </div>
         <div class="card-grid-marketing">
           <article class="feature-card">
@@ -53,113 +55,151 @@
       </div>
     </section>
 
-    <!-- Comparison Example -->
-    <section class="section section-compare bg-soft">
+    <!-- [C] What You Can Compare -->
+    <section class="section section-benefits bg-soft">
       <div class="container">
-        <div class="section-header">
+        <div class="split-layout">
+          <div class="sticky-side">
+            <h2>What You Can Compare</h2>
+            <p>Beyond simple headlines. Deep narrative analysis for global operators.</p>
+          </div>
+          <ul class="benefit-list">
+            <li>
+              <strong>Same event across multiple countries</strong>
+              <span>Track how a single crisis propagates through different national media.</span>
+            </li>
+            <li>
+              <strong>Headline tone and source framing</strong>
+              <span>Detect subtle shifts in language—from "deterrence" to "escalation."</span>
+            </li>
+            <li>
+              <strong>War, diplomacy, energy, and market narratives</strong>
+              <span>Specialized sensors for high-stakes geopolitical domains.</span>
+            </li>
+            <li>
+              <strong>Headline snapshots plus article deep-read</strong>
+              <span>Active deep-parsing to feed your AI models clean, reliable context.</span>
+            </li>
+            <li>
+              <strong>Feed readiness and coverage scope</strong>
+              <span>Real-time monitoring of global sensor uptime and parity.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- [D] Example Narratives (Ge Ge Geo-Policy Comparison) -->
+    <section class="section section-compare">
+      <div class="container">
+        <div class="section-header center">
           <h2>See the same crisis through different national lenses</h2>
-          <p>The same event, three completely different editorial priorities.</p>
+          <p>How the same event is prioritized and described by regional media leaders.</p>
         </div>
         <div class="comparison-grid">
-          <div class="compare-card">
+          <div class="compare-card country-usa">
             <div class="card-tag">USA</div>
-            <h4>"Strategic deterrence and coalition response."</h4>
-            <p class="card-footer">Focus: Security alliances & Pressure</p>
+            <h4>"Strategic deterrence, coalition building, and global pressure."</h4>
+            <div class="keywords">
+              <span>escalation</span> <span>deterrence</span> <span>pressure</span>
+            </div>
           </div>
-          <div class="compare-card highlight">
-            <div class="card-tag">UK</div>
-            <h4>"International law and humanitarian urgency."</h4>
-            <p class="card-footer">Focus: Assessment & Energy costs</p>
+          <div class="compare-card country-uk highlight">
+            <div class="card-tag">UNITED KINGDOM</div>
+            <h4>"International law, humanitarian urgency, and energy security."</h4>
+            <div class="keywords">
+              <span>assessment</span> <span>domestic-impact</span> <span>energy-cost</span>
+            </div>
           </div>
-          <div class="compare-card">
-            <div class="card-tag">GULF</div>
-            <h4>"Regional stability and military readiness."</h4>
-            <p class="card-footer">Focus: Direct exposure & De-escalation</p>
+          <div class="compare-card country-gulf">
+            <div class="card-tag">GULF / SAUDI</div>
+            <h4>"Regional stability, military readiness, and direct posture."</h4>
+            <div class="keywords">
+              <span>regional-threat</span> <span>military-readiness</span> <span>posture</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Live Demo -->
-    <section id="demo" class="section section-demo">
+    <!-- [E] Live Demo -->
+    <section id="demo" class="section section-demo bg-soft">
       <div class="container">
         <div class="demo-box glass">
           <div class="demo-info">
-            <h2>Try the Live MCP Demo</h2>
-            <p>Connect your MCP client directly to our GCP production instance. The live engine runs separately to protect private ingestion logic while providing real performance.</p>
+            <h2>Try the live MCP demo</h2>
+            <p>
+              This public repository showcases the architecture, interface, and UI. 
+              The live MCP engine runs separately on GCP so you can test the real service 
+              without exposing the private ingestion and operational logic.
+            </p>
           </div>
           <div class="demo-endpoint">
-            <label>SSE Endpoint</label>
+            <label>Live SSE Endpoint</label>
             <div class="url-bar">
               <code id="endpoint-url">http://35.202.58.51:8766/sse</code>
               <button onclick="navigator.clipboard.writeText('http://35.202.58.51:8766/sse')" class="btn-copy">Copy</button>
             </div>
-            <p class="hint">Use with Claude Desktop, ASDK Studio, or any MCP-compatible agent.</p>
+            <p class="hint">Compatible with Claude Desktop, ASDK Studio, and custom LLM agents.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Architecture -->
+    <!-- [F] Architecture -->
     <section class="section section-arch">
       <div class="container">
         <div class="section-header center">
           <h2>Architecture at a Glance</h2>
-          <p>A 4-layer intelligence delivery system designed for scalability.</p>
+          <p>The public repository exposes the showcase and interface layer. The private ingestion engine remains separate for service stability and quality control.</p>
         </div>
-        <div class="arch-visual">
-          <div class="arch-step">
-            <div class="step-icon">🔒</div>
-            <div class="step-label">Intelligent Ingestion (Private)</div>
+        <div class="arch-visual-modern">
+          <div class="arch-box private">
+            <div class="arch-icon">🔒</div>
+            <span class="arch-label">Intelligent Ingestion<br>(Private)</span>
           </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-step">
-            <div class="step-icon">⚡</div>
-            <div class="step-label">Snapshot Buffer</div>
+          <div class="arch-line"></div>
+          <div class="arch-box">
+            <div class="arch-icon">⚡</div>
+            <span class="arch-label">Snapshot Buffer</span>
           </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-step">
-            <div class="step-icon">🔌</div>
-            <div class="step-label">MCP Interface</div>
+          <div class="arch-line"></div>
+          <div class="arch-box">
+            <div class="arch-icon">🔌</div>
+            <span class="arch-label">MCP Interface</span>
           </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-step highlight">
-            <div class="step-icon">👁️</div>
-            <div class="step-label">Operator Surface</div>
+          <div class="arch-line"></div>
+          <div class="arch-box active">
+            <div class="arch-icon">👁️</div>
+            <span class="arch-label">Operator Surface</span>
           </div>
         </div>
-        <p class="arch-note center">Private ingestion and operational logic remain separate for service stability and quality control.</p>
       </div>
     </section>
 
-    <!-- Technical Preview (Old Dashboard) -->
-    <section class="section section-preview bg-black">
+    <!-- [G] Operator Preview (Original UI moved here) -->
+    <section id="preview" class="section section-preview bg-black">
       <div class="container">
         <div class="section-header">
           <p class="eyebrow">Technical Insight</p>
           <h2>Operator Preview</h2>
-          <p>Monitor feed readiness, coverage scope, and tool availability through the operator-facing UI dashboard.</p>
+          <p>Monitor feed health, country coverage, and MCP tool availability through the operator-facing interface.</p>
         </div>
         
-        <!-- Original Dashboard Content: nested -->
-        <main class="shell operator-ui">
-          <section class="panel panel-controls">
-            <div class="section-head">
-              <div>
-                <h2>Controls</h2>
-              </div>
-            </div>
+        <div class="operator-ui-wrapper">
+          <!-- Nested Original Logic -->
+          <div class="panel panel-controls">
             <div class="control-grid">
               <label class="control-field">
-                <span>Country</span>
+                <span>Country Filter</span>
                 <select id="country-filter"></select>
               </label>
               <label class="control-field">
-                <span>Topic</span>
+                <span>Topic Filter</span>
                 <select id="topic-filter"></select>
               </label>
-              <label class="control-field control-span">
-                <span>Sort by</span>
+              <label class="control-field">
+                <span>Sort Mode</span>
                 <select id="sort-mode">
                   <option value="state">state</option>
                   <option value="country">country</option>
@@ -169,48 +209,51 @@
                 </select>
               </label>
               <div class="control-actions">
-                <button id="refresh-button" type="button">Refresh</button>
+                <button id="refresh-button" type="button">Refresh Snapshots</button>
               </div>
             </div>
-          </section>
+          </div>
 
-          <section class="grid grid-live">
-            <article class="panel panel-live">
+          <div class="grid-preview">
+            <div class="panel">
               <h3>Feed Health</h3>
-              <div class="stat-row-compact">
-                <div><span class="label">Ready</span> <strong id="feed-ready-count">-</strong></div>
-                <div><span class="label">Degraded</span> <strong id="feed-degraded-count">-</strong></div>
+              <div class="stat-group">
+                <div class="stat">Ready <strong id="feed-ready-count">-</strong></div>
+                <div class="stat degraded">Degraded <strong id="feed-degraded-count">-</strong></div>
               </div>
               <div id="feed-status-meta" class="meta-strip"></div>
-            </article>
-
-            <article class="panel panel-live">
-              <h3>Latest Headlines</h3>
+            </div>
+            <div class="panel">
+              <h3>Latest Headlines Snapshot</h3>
               <div id="headline-preview" class="stack"></div>
-            </article>
-          </section>
+            </div>
+          </div>
 
-          <article class="panel panel-compact mt-20">
+          <div class="panel">
             <h3>Tool Catalog</h3>
-            <div id="tool-cards" class="card-grid"></div>
-          </article>
-        </main>
+            <div id="tool-cards" class="card-grid-small"></div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- [H] Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
+        <div class="footer-main">
+          <div class="footer-about">
             <h3>Open World News MCP</h3>
-            <p>Intelligence interface for national narrative comparison.</p>
+            <p>A country-aware global news intelligence interface for AI agents and operators. It helps compare how nations frame the same event differently across war, diplomacy, energy shocks, and global crises.</p>
           </div>
-          <div class="footer-quote">
-            <p>"Tracking the global narrative shift."</p>
+          <div class="footer-links">
+            <a href="https://github.com/lim-asdk/open-world-news-mcp">GitHub</a>
+            <a href="https://github.com/lim-asdk/open-world-news-mcp/tree/master/docs">Documentation</a>
+            <a href="#demo">Live Demo</a>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Open World News MCP Showcase. All Rights Reserved.</p>
+          <p>Tracking the global narrative shift.</p>
+          <p>&copy; 2026 Open World News MCP. All rights reserved.</p>
         </div>
       </div>
     </footer>
