@@ -196,51 +196,28 @@
         </div>
         
         <div class="operator-ui-wrapper">
-          <!-- Nested Original Logic -->
-          <div class="panel panel-controls">
-            <div class="control-grid">
-              <label class="control-field">
-                <span>Country Filter</span>
-                <select id="country-filter"></select>
-              </label>
-              <label class="control-field">
-                <span>Topic Filter</span>
-                <select id="topic-filter"></select>
-              </label>
-              <label class="control-field">
-                <span>Sort Mode</span>
-                <select id="sort-mode">
-                  <option value="state">state</option>
-                  <option value="country">country</option>
-                  <option value="topic">topic</option>
-                  <option value="source">source</option>
-                  <option value="latest">latest update</option>
-                </select>
-              </label>
-              <div class="control-actions">
-                <button id="refresh-button" type="button">Refresh Snapshots</button>
-              </div>
+          <div class="screenshot-matrix">
+            <div class="matrix-item">
+              <img src="screenshots/ui_dashboard.png" alt="Operator Dashboard General" />
+              <p>Global Snapshot Monitor</p>
+            </div>
+            <div class="matrix-item">
+              <img src="screenshots/ui_dashboard_ru.png" alt="Russian Narrative Tracking" />
+              <p>Russian Narrative Tracking</p>
+            </div>
+            <div class="matrix-item">
+              <img src="screenshots/ui_dashboard_kor.png" alt="Korean Local Headlines" />
+              <p>Korean Local Headlines</p>
+            </div>
+            <div class="matrix-item">
+              <img src="screenshots/ui_dashboard_tools.png" alt="Multi-National Tool Parity" />
+              <p>Multi-National Tool Parity</p>
             </div>
           </div>
-
-          <div class="grid-preview">
-            <div class="panel">
-              <h3>Feed Health</h3>
-              <div class="stat-group">
-                <div class="stat">Ready <strong id="feed-ready-count">-</strong></div>
-                <div class="stat degraded">Degraded <strong id="feed-degraded-count">-</strong></div>
-              </div>
-              <div id="feed-status-meta" class="meta-strip"></div>
-            </div>
-            <div class="panel">
-              <h3>Latest Headlines Snapshot</h3>
-              <div id="headline-preview" class="stack"></div>
-            </div>
-          </div>
-
-          <div class="panel">
-            <h3>Tool Catalog</h3>
-            <div id="tool-cards" class="card-grid-small"></div>
+          
+          <!-- Nested Original Logic (Hidden by default or simplified) -->
+          <div class="technical-details-toggle">
+            <p>※ The above screenshots represent the actual live operator surface. Technical source code for this interface is available below.</p>
           </div>
         </div>
       </div>

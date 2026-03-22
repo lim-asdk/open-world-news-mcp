@@ -99,6 +99,44 @@ h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.1; margin: 0; font-weight
 .compare-card .quote { font-size: 20px; color: #fff; margin-bottom: 24px; font-weight: 600; font-style: italic; line-height: 1.4; border-left: 3px solid var(--line); padding-left: 20px; }
 .compare-card.highlight .quote { border-left-color: var(--accent); }
 .context-note { font-size: 15px; color: var(--accent); margin-top: 10px; font-style: italic; }
+
+/* Screenshot Matrix */
+.screenshot-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+.matrix-item {
+  background: #000;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.matrix-item:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+.matrix-item img {
+  width: 100%;
+  display: block;
+}
+.matrix-item p {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--panel);
+  margin: 0;
+  font-weight: 600;
+}
+.technical-details-toggle {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--line);
+  font-size: 13px;
+}
 .keywords { display: flex; gap: 8px; flex-wrap: wrap; }
 .keywords span { padding: 5px 12px; border-radius: 6px; background: rgba(255,255,255,0.05); font-size: 13px; color: var(--muted); }
 
