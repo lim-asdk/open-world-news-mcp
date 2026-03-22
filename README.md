@@ -9,7 +9,9 @@
 ---
 
 ## 🌎 What is Open World News MCP?
-It is a **Country-Aware Intelligence Layer** for AI agents. In a world of geopolitical shifts, the "facts" are only the surface. The real intelligence lies in the **narratives**—how the same event is told by local media across the US, UK, Middle East, and Asia.
+It is a **Country-Aware Intelligence Layer** for AI agents. In a world of geopolitical shifts, we track news across **all 150+ countries** without gaps. 
+
+By gathering news in their **original native languages**, we capture authentic framing—how the same event is told by local media across the US, UK, Middle East, Asia, and beyond. This is true global intelligence before it’s lost in translation.
 
 ## 🛠️ How to Try (Quick Setup)
 1. **Open your MCP client** (e.g., Claude Desktop, ASDK Studio).
